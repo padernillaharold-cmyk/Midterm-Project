@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartTour - Tourism Guide and Destination Recommendation System</title>
+    <title>SmartTour - Tourism Guide</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,10 +14,10 @@
                 <h1>🌍 SmartTour</h1>
             </div>
             <ul class="nav-links">
+                
                 <li><a href="#home">Home</a></li>
                 <li><a href="#destinations">Destinations</a></li>
                 <li><a href="#itinerary">My Itinerary</a></li>
-                <li><a href="#" onclick="openImageUploader()" style="cursor: pointer;">⚙️ Edit Images</a></li>
             </ul>
         </div>
     </nav>
@@ -26,17 +26,17 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Discover Your Next Adventure</h2>
-            <p>Explore amazing tourist destinations, plan your trips, and access travel information all in one place</p>
-            <button class="btn-primary" onclick="scrollToDestinations()">Explore Destinations</button>
+            <p>Explore amazing tourist destinations and plan your perfect trip</p>
+            <button class="btn-primary" onclick="scrollToDestinations()">Explore Now</button>
         </div>
     </section>
 
     <!-- Search and Filter Section -->
     <section class="search-section">
-        <div class="container">
+        
             <h3>Find Your Perfect Destination</h3>
             <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Search by destination name or location...">
+                
                 <select id="categoryFilter">
                     <option value="">All Categories</option>
                     <option value="Beach">🏖️ Beach</option>
@@ -45,7 +45,7 @@
                     <option value="Adventure">🪂 Adventure</option>
                     <option value="Cultural">🎭 Cultural</option>
                 </select>
-                <button onclick="searchDestinations()">Search</button>
+                
             </div>
         </div>
     </section>
@@ -53,7 +53,8 @@
     <!-- Destinations Directory -->
     <section id="destinations" class="destinations">
         <div class="container">
-            <h2>Tourist Destination Directory</h2>
+            
+            <h2>Popular Destinations</h2>
             <div id="destinationsGrid" class="destinations-grid">
                 <!-- Destinations will be loaded here -->
             </div>
@@ -68,23 +69,12 @@
         </div>
     </div>
 
-    <!-- Image Uploader Modal -->
-    <div id="imageUploaderModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Edit Destination Images</h2>
-            <p style="color: #666; margin-bottom: 1rem;">Paste image URLs to customize each destination</p>
-            <div id="imageUploaderList" style="max-height: 400px; overflow-y: auto;"></div>
-        </div>
-    </div>
-
-    <!-- Itinerary Section - Travel Planning Feature -->
+    <!-- Itinerary Section -->
     <section id="itinerary" class="itinerary">
         <div class="container">
-            <h2>✈️ Travel Planning Feature - My Itinerary</h2>
-            <p style="color: #666; margin-bottom: 1.5rem;">Create and organize your travel plans for your upcoming trips</p>
+            <h2>✈️ My Travel Itinerary</h2>
             <div id="itineraryList" class="itinerary-list">
-                <p>No destinations added yet. Start planning your trip by adding destinations from the list!</p>
+                <p>No destinations added yet. Start by adding destinations from the list!</p>
             </div>
             <button class="btn-primary" onclick="clearItinerary()" style="background-color: #e74c3c; margin-top: 1rem;">Clear All</button>
         </div>
@@ -93,13 +83,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <h3>SmartTour - Your Complete Tourism Guide</h3>
-            <p>&copy; 2026 SmartTour. Digital Tourism Guide and Destination Recommendation System.</p>
-            <p style="font-size: 0.9rem; margin-top: 1rem;">Helping tourists discover destinations, plan trips, and access travel information in one platform.</p>
+            <p>&copy; 2026 SmartTour. Discover. Explore. Travel.</p>
             <ul class="footer-links">
-                <li><a href="#">About Us</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Privacy</a></li>
             </ul>
         </div>
     </footer>
