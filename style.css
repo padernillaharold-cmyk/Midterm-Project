@@ -152,12 +152,15 @@ body {
     gap: 2rem;
 }
 
+/* DESTINATION CARD - IMAGE ON TOP */
 .destination-card {
     background: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .destination-card:hover {
@@ -165,22 +168,28 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* IMAGE DISPLAYS ON TOP - MOST IMPORTANT */
 .destination-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     display: block;
     background-color: #ddd;
 }
 
+/* TEXT CONTENT BELOW IMAGE */
 .destination-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .destination-info h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
     color: #2c3e50;
+    font-weight: bold;
 }
 
 .destination-info p {
@@ -197,6 +206,7 @@ body {
     border-radius: 20px;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
+    width: fit-content;
 }
 
 .rating {
@@ -215,7 +225,7 @@ body {
     transition: all 0.3s;
     font-weight: bold;
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
 }
 
 .btn-view-details:hover {
@@ -505,5 +515,9 @@ body {
     .modal-content {
         width: 95%;
         padding: 1rem;
+    }
+
+    .destination-card img {
+        height: 180px;
     }
 }
